@@ -2,6 +2,11 @@
 
 FILE="access.log"
 
+if [ ! -f "$FILE" ]; then
+    echo "File $FILE does not exist."
+    exit 1
+fi
+
 echo "Extract all unique IP addresses from $FILE:"
 echo "================================================"
 awk '{print $1}' $FILE | sort | uniq

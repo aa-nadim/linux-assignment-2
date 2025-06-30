@@ -2,6 +2,12 @@
 
 FILE="book.txt"
 
+if [ ! -f "$FILE" ]; then
+    echo "File $FILE does not exist."
+    exit 1
+fi
+
+
 echo "Convert all text to lowercase:"
 echo "========================================================"
 lower_text=$(cat "$FILE" | tr '[:upper:]' '[:lower:]')
