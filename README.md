@@ -27,3 +27,10 @@ Make two scripts named access_log_process.sh and book_process.sh in a way so tha
 Both files, access.log and book.txt, will be present in the present directory, from which the files will be executed.
 Push the files into a git repository, and submit the repository link in the classroom.
 ```
+
+## How to Run
+```bash
+chmod +x access_log_process.sh
+
+./access_log_process.sh
+```
