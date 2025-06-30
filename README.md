@@ -31,6 +31,10 @@ Push the files into a git repository, and submit the repository link in the clas
 ## How to Run
 ```bash
 chmod +x access_log_process.sh
-
 ./access_log_process.sh
+
+
+chmod +x book_process.sh
+./book_process.sh
+
 ```
